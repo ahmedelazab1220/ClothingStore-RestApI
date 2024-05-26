@@ -31,6 +31,8 @@ This project is a comprehensive solution for managing a clothing store, built us
 
 # Project Structure
 
+```
+
 MyClothingStore-Project
 │
 ├── src
@@ -111,6 +113,7 @@ MyClothingStore-Project
 │                       └── ClothingStoreRestApIApplication.java
 └── pom.xml
 
+```
 
 # Installation
 
@@ -123,6 +126,7 @@ MyClothingStore-Project
   - `Set up the MySQL database`:
     
     ```
+
       spring.datasource.url=jdbc:mysql://localhost:3306/[your_database_name]?useSSL=false
       spring.datasource.username=[your_username]
       spring.datasource.password=[your_password]

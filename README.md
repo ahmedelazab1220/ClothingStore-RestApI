@@ -159,7 +159,7 @@ MyClothingStore-Project
 
 # License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the <a href = "https://github.com/ahmedelazab1220/ClothingStore-RestApI/blob/main/LICENSE"> LICENSE </a> file for details.
 
 # Conclusion
 

@@ -11,7 +11,7 @@ This project is a comprehensive solution for managing a clothing store, built us
 
 `MySQL`: A reliable relational database management system used for storing the application's data.
 
-`Spring Security`: Ensures secure access to the application's endpoints.
+`Spring Security`: Utilized along with JSON Web Tokens (`JWT`) for secure access to the application's endpoints.
 
 `Spring DevTools`: Enhances development experience by providing hot reloading and other useful features.
 
@@ -25,7 +25,9 @@ This project is a comprehensive solution for managing a clothing store, built us
 
 `Efficient Data Management`: Utilizes Spring Data JPA for seamless interaction with the MySQL database.
 
-`Logical Operations`: Supports Varitey Queries To Database. 
+`Logical Operations`: Supports Varitey Queries To Database.
+
+`Spring Validation`: Implements validation logic using Spring's validation framework to ensure data integrity and enforce business rules.
 
 `SOLID Principle`: The project adheres to SOLID principles, ensuring maintainability, scalability, and code readability.
 
@@ -157,10 +159,42 @@ MyClothingStore-Project
 
    ![Postman](https://github.com/ahmedelazab1220/ClothingStore-RestApI/assets/105994948/a7880af1-31bb-40a5-9a6e-00fb39f3f871) 
 
+
+# Example Request and Response
+
+   `Request `Post` | http://localhost:8080/api/v1/auth/register`
+   
+   ```
+    
+    {
+       "email" : "ahmed@gmail.com",
+       "password" : "12345678", 
+       "phoneNumber" : "025257975",
+       "role" : "MANAGER"
+    } 
+
+   ```
+
+   `Response`
+   
+   ```
+    
+    {
+       "email" : "ahmed@gmail.com",
+       "password" : "12345678", 
+       "phoneNumber" : "025257975",
+       "role" : {
+          "role_id" : 1,
+          "role_name" "MANAGER": 
+       }
+    }
+
+   ```
+
 # License
 
 This project is licensed under the MIT License - see the <a href = "https://github.com/ahmedelazab1220/ClothingStore-RestApI/blob/main/LICENSE"> LICENSE </a> file for details.
 
 # Conclusion
 
-The Clothing Store Management System is designed to be a robust and secure solution for managing a clothing store's inventory and operations. By leveraging Spring Boot, Spring Data JPA, and Spring Security, this application ensures a seamless and secure user experience. Whether you're looking to create, read, update, or delete store items, this system provides the necessary endpoints and functionality to manage your store effectively. Contributions and feedback are welcome to continuously improve and extend the capabilities of this application.
+The Clothing Store Management System is designed to be a robust and secure solution for managing a clothing store's inventory and operations. By leveraging Spring Boot, Spring Data JPA, Spring Security with JWT, and adhering to SOLID principles, this application ensures a seamless and secure user experience. Whether you're looking to create, read, update, or delete store items, this system provides the necessary endpoints and functionality to manage your store effectively. Contributions and feedback are welcome to continuously improve and extend the capabilities of this application

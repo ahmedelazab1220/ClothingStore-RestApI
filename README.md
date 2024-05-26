@@ -164,7 +164,10 @@ MyClothingStore-Project
 
    `Request `Post` | http://localhost:8080/api/v1/auth/register`
    
-   ```
+   <script>
+
+
+   var ```
     
     {
        "email" : "ahmed@gmail.com",
@@ -175,10 +178,14 @@ MyClothingStore-Project
 
    ```
 
+   </script>
+
+
    `Response`
    
-   ```
-    
+   <script>
+
+   var ```
     {
        "email" : "ahmed@gmail.com",
        "password" : "12345678", 
@@ -190,6 +197,8 @@ MyClothingStore-Project
     }
 
    ```
+
+   </script>
 
 # License
 

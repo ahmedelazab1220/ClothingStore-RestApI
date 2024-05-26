@@ -5,31 +5,31 @@ This project is a comprehensive solution for managing a clothing store, built us
 
 # Technologies Used
 
-`Spring Boot (lastest version)` : A powerful, feature-rich framework for building Java applications.
+**`Spring Boot (lastest version 3.3.0)`**: A powerful, feature-rich framework for building Java applications.
 
-`Spring Data JPA`: Simplifies database interactions by providing a robust data access layer.
+**`Spring Data JPA`**: Simplifies database interactions by providing a robust data access layer.
 
-`MySQL`: A reliable relational database management system used for storing the application's data.
+**`MySQL`**: A reliable relational database management system used for storing the application's data.
 
-`Spring Security`: Utilized along with JSON Web Tokens (`JWT`) for secure access to the application's endpoints.
+**`Spring Security`**: Utilized along with JSON Web Tokens (`JWT`) for secure access to the application's endpoints.
 
-`Spring DevTools`: Enhances development experience by providing hot reloading and other useful features.
+**`Spring DevTools`**: Enhances development experience by providing hot reloading and other useful features.
 
-`Java 21`: The latest long-term support (LTS) version of Java, offering new features and improvements.
+**`Java 21`**: The latest long-term support (LTS) version of Java, offering new features and improvements.
 
 # Features
 
-`CRUD Operations`: Supports Create, Read, Update, and Delete operations for managing clothing store data.
+**`CRUD Operations`**: Supports Create, Read, Update, and Delete operations for managing clothing store data.
 
-`Secure Access`: Uses Spring Security to protect endpoints and ensure that only authorized users can perform certain actions.
+**`Secure Access`**: Uses Spring Security to protect endpoints and ensure that only authorized users can perform certain actions.
 
-`Efficient Data Management`: Utilizes Spring Data JPA for seamless interaction with the MySQL database.
+**`Efficient Data Management`** : Utilizes Spring Data JPA for seamless interaction with the MySQL database.
 
-`Logical Operations`: Supports Varitey Queries To Database.
+**`Logical Operations`**: Supports Varitey Queries To Database.
 
-`Spring Validation`: Implements validation logic using Spring's validation framework to ensure data integrity and enforce business rules.
+**`Spring Validation`**: Implements validation logic using Spring's validation framework to ensure data integrity and enforce business rules.
 
-`SOLID Principle`: The project adheres to SOLID principles, ensuring maintainability, scalability, and code readability.
+**`SOLID Principle`**: The project adheres to SOLID principles, ensuring maintainability, scalability, and code readability.
 
 # Project Structure
 
@@ -119,13 +119,13 @@ MyClothingStore-Project
 
 # Installation
 
-  - `Clone the repository`:
+  - **`Clone the repository`**:
      
     - git clone https://github.com/ahmedelazab1220/ClothingStore-RestApI.git
     - you can also download Zip file and extract.  
       
 
-  - `Set up the MySQL database`:
+  - **`Set up the MySQL database`**:
     
     ```
 
@@ -139,9 +139,9 @@ MyClothingStore-Project
       spring.jpa.properties.hibernate.format.sql=true
     
     ```
-    `note` : if you need to create database automatically you can use this `spring.datasource.url=jdbc:mysql://localhost:3306/[your_database_name]?createDatabaseIfNotExist=true` instead of first line
+    ***`note`*** : if you need to create database automatically you can use this `spring.datasource.url=jdbc:mysql://localhost:3306/[your_database_name]?createDatabaseIfNotExist=true` instead of first line
 
-  - `Build and run the application`:     
+  - **`Build and run the application`**:     
    
     - mvn clean install
     - mvn spring-boot:run
@@ -162,7 +162,7 @@ MyClothingStore-Project
 
 # Example Request and Response
 
-   `Request `Post` | http://localhost:8080/api/v1/auth/register`
+   **`Request ` Post ` | http://localhost:8080/api/v1/auth/register`**
    
    ```
     
@@ -175,10 +175,10 @@ MyClothingStore-Project
 
    ```
 
-   `Response`
+   **`Response`**
    
    ```
-   
+
     {
        "email" : "ahmed@gmail.com",
        "password" : "12345678", 

@@ -1,4 +1,4 @@
-package com.luv2code.demo.dto.request;
+package com.luv2code.demo.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,9 +11,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class OrderItemRequest {
+public class OrderItemResponse {
 
-	private Long product_id;
+	private String product_name;
 
 	private Integer quantity;
 

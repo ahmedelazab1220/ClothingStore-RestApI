@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.luv2code.demo.dto.request.OrderDtoRequest;
-import com.luv2code.demo.entity.Order;
+import com.luv2code.demo.dto.response.OrderDtoResponse;
 import com.luv2code.demo.service.OrderService;
 
 import lombok.AllArgsConstructor;
@@ -27,7 +27,7 @@ public class OrderController {
 
 	@GetMapping("/{theId}")
 	@PreAuthorize("hasAnyRole('MANAGER' , 'USER')")
-	public List<Order> getAllOrderByUser(@PathVariable(name = "theId") long theId) {
+	public List<OrderDtoResponse> getAllOrderByUser(@PathVariable(name = "theId") long theId) {
 
 		return orderService.findAllOrderByUser(theId);
 

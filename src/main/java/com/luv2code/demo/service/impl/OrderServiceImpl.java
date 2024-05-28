@@ -4,12 +4,15 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
 import com.luv2code.demo.dto.mapper.SystemMapper;
 import com.luv2code.demo.dto.request.OrderDtoRequest;
 import com.luv2code.demo.dto.request.OrderItemRequest;
+import com.luv2code.demo.dto.response.OrderDtoResponse;
+import com.luv2code.demo.dto.response.OrderItemResponse;
 import com.luv2code.demo.entity.Order;
 import com.luv2code.demo.entity.OrderItem;
 import com.luv2code.demo.entity.Product;
@@ -33,11 +36,17 @@ public class OrderServiceImpl implements OrderService {
 	private final SystemMapper mapper;
 
 	@Override
-	public List<Order> findAllOrderByUser(long userId) {
+	public List<OrderDtoResponse> findAllOrderByUser(long userId) {
 
-		List<Order> orders = orderRepository.findAllByUserId(userId);
+		return orderRepository.findAllByUserId(userId).stream()
+				.map(order -> new OrderDtoResponse(order.getUser().getEmail(), order.getUser().getPhoneNumber(),
+						order.getOrderDate(),
+						order.getOrderItems().stream()
+								.map(orderItem -> new OrderItemResponse(orderItem.getProduct().getProductName(),
+										orderItem.getQuantity(), orderItem.getPrice()))
+								.collect(Collectors.toList())))
+				.collect(Collectors.toList());
 
-		return orders;
 	}
 
 	@Override

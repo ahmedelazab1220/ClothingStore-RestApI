@@ -11,9 +11,15 @@ This project is a comprehensive solution for managing a clothing store, built us
 
 **`MySQL`**: A reliable relational database management system used for storing the application's data.
 
+**`Hibernate ORM`**: An object-relational mapping (ORM) framework for Java applications, simplifying database interactions by mapping Java objects to database tables.
+
 **`Spring Security`**: Utilized along with JSON Web Tokens (`JWT`) for secure access to the application's endpoints.
 
+**`Lombok`**: Reduces boilerplate code by providing annotations to automatically generate getters, setters, constructors, and other common methods.
+
 **`Spring DevTools`**: Enhances development experience by providing hot reloading and other useful features.
+
+**`MapStruct`**: Simplifies mapping between layers.
 
 **`Java 21`**: The latest long-term support (LTS) version of Java, offering new features and improvements.
 
@@ -28,6 +34,8 @@ This project is a comprehensive solution for managing a clothing store, built us
 **`Logical Operations`**: Supports Varitey Queries To Database.
 
 **`Spring Validation`**: Implements validation logic using Spring's validation framework to ensure data integrity and enforce business rules.
+
+**`DTOs (Data Transfer Objects)`**: Utilizes DTOs to transfer data between layers, ensuring a clean separation of concerns.
 
 **`SOLID Principle`**: The project adheres to SOLID principles, ensuring maintainability, scalability, and code readability.
 

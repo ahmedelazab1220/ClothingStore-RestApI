@@ -172,7 +172,7 @@ MyClothingStore-Project
 
    **`Request ` Post ` | http://localhost:8080/api/v1/auth/register`**
    
-   ```
+   ```json
     
     {
        "email" : "ahmed@gmail.com",
@@ -185,7 +185,7 @@ MyClothingStore-Project
 
    **`Response`**
    
-   ```
+   ```json
 
     {
        "email" : "ahmed@gmail.com",
